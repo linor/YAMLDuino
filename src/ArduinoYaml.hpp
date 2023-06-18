@@ -58,7 +58,7 @@ extern "C"
 
 #define I18N_SUPPORT
 
-#if __has_include(<FS.h>)
+#if __has_include(<FS.h>) && !defined CORE_TEENSY
   #define I18N_SUPPORT_FS
 #endif
 
